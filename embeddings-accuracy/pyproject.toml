@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "embeddings-accuracy"
+version = "0.1.0"
+description = "A library for evaluating the accuracy of embeddings through clustering and dimensionality reduction."
+authors = [{ name = "Partha Khanna", email = "partha_khanna@hotelmap.com" }]
+license = { text = "MIT" }
+readme = "README.md"
+homepage = "https://github.com/parthak314/embeddings-accuracy"
+repository = "https://github.com/parthak314/embeddings-accuracy"
+keywords = ["embeddings", "clustering", "dimensionality reduction", "silhouette score", "k-NN"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.0"
+scikit-learn = "^0.24"
+numpy = "^1.19"
